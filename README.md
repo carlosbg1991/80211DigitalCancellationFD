@@ -3,7 +3,7 @@
 This code evaluates two Digital Cancellation methods for a Full Duplex system, in the Frequency and Time domain respectivelly. To that end, two
 WiFi frames will be generated, passed through a TGn channel Model A, and AWGN. Impairments will be incorporated at the receiver such as Frequency Offset or IQ Imbalanced, in order to emulate a real radio behavior.
 
-Since no WLAN System Toolbox was available at the moment of implementing this code, we took the work in [1] as a reference, and adapted their C++  code into Matlab code accordingly.
+Since no WLAN System Toolbox was available at the moment of implementing this code, the work in [1] was taken as a baseline and their C++ code was addapted to Matlab accordingly.
 
 ## Simulation configuration
 
@@ -18,3 +18,7 @@ The parameters can be configured in the main script prior execution:
 - **FO**: Impairment at RX: Frequency offset
 - **IQImb_gain**: Impairment at RX: IQ Imbal - Gain missmatch
 - **IQImb_phase**: Impairment at RX: IQ Imbal - Phase Missmatch
+
+## References
+
+[1] Bastian Bloessl, Michele Segata, Christoph Sommer, and Falko Dressler. 2013. An IEEE 802.11a/g/p OFDM receiver for GNU radio. In Proceedings of the second workshop on Software radio implementation forum (SRIF '13). ACM, New York, NY, USA, 9-16. Code: https://github.com/bastibl/gr-ieee802-11.git
